@@ -38,6 +38,8 @@ jobs:
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:v0.52.1 docker://sincoser/tektoncd-pipeline-webhook:v0.52.1
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/entrypoint:v0.52.1 docker://sincoser/tektoncd-pipeline-entrypoint:v0.52.1
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop:v0.52.1 docker://sincoser/tektoncd-pipeline-nop:v0.52.1
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/workingdirinit:v0.52.1 docker://sincoser/tektoncd-pipeline-workingdirinit:v0.52.1 
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/events:v0.52.1 docker://sincoser/tektoncd-pipeline-events:v0.52.1 
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/sidecarlogresults:v0.52.1 docker://sincoser/tektoncd-pipeline-sidecarlogresults:v0.52.1
 
  
