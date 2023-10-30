@@ -36,11 +36,8 @@ jobs:
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.52.1 docker://sincoser/tektoncd-pipeline-controller:v0.52.1
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/resolvers:v0.52.1 docker://sincoser/tektoncd-pipeline-resolvers:v0.52.1
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:v0.52.1 docker://sincoser/tektoncd-pipeline-webhook:v0.52.1
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/git-init:v0.52.1 docker://sincoser/tektoncd-pipeline-git-init:v0.52.1
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/entrypoint:v0.52.1 docker://sincoser/tektoncd-pipeline-entrypoint:v0.52.1
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop:v0.52.1 docker://sincoser/tektoncd-pipeline-nop:v0.52.1
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/sidecarlogresults:v0.52.1 docker://sincoser/tektoncd-pipeline-sidecarlogresults:v0.52.1
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/imagedigestexporter:v0.52.1 docker://sincoser/tektoncd-pipeline-imagedigestexporter:v0.52.1
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/pullrequest-init:v0.52.1 docker://sincoser/tektoncd-pipeline-pullrequest-init:v0.52.1
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/workingdirinit:v0.52.1 docker://sincoser/tektoncd-pipeline-workingdirinit:v0.52.1 
+
  
