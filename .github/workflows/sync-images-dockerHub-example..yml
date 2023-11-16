@@ -51,4 +51,8 @@ jobs:
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/webhook:v0.25.2 docker://sincoser/tektoncd-triggers-webhook:v0.25.2
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/interceptors:v0.25.2 docker://sincoser/tektoncd-triggers-interceptors:v0.25.2
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/eventlistenersink:v0.25.2 docker://sincoser/tektoncd-triggers-eventlistenersink:v0.25.2
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/proxy-webhook:v0.68.1 docker://sincoser/tektoncd-operator-proxy-webhook:v0.68.1
+        skopeo copy --all docker://gcr.io/tekton-releases/dogfooding/tkn@sha256:64886334a4fd2a9fef496e83e248d66159c05691abb66bf5e6887ba3845f61d docker://sincoser/tektoncd-dogfooding-tkn:v0.0.1
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/operator:v0.68.1 docker://sincoser/tektoncd-operator-operator:v0.68.1
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/webhook:v0.68.1 docker://sincoser/tektoncd-operator-webhook:v0.68.1
         
