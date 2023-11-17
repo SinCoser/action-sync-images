@@ -33,7 +33,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop:v0.50.5 docker://sincoser/tektoncd-pipeline-nop:v0.50.5
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/workingdirinit:v0.50.5 docker://sincoser/tektoncd-pipeline-workingdirinit:v0.50.5
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/events:v0.50.5 docker://sincoser/tektoncd-pipeline-events:v0.50.5 
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/sidecarlogresults:v0.50.5 docker://sincoser/tektoncd-pipeline-sidecarlogresults:v0.50.5
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/entrypoint:v0.50.5 docker://sincoser/tektoncd-pipeline-entrypoint:v0.50.5
