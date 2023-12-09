@@ -34,3 +34,9 @@ jobs:
       run: |
         #!/usr/bin/env bash
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/entrypoint:v0.50.5 docker://sincoser/tektoncd-pipeline-entrypoint:v0.50.5
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/proxy-webhook:v0.68.1 docker://sincoser/tektoncd-operator-proxy-webhook:v0.68.1
+        skopeo copy --all docker://gcr.io/tekton-releases/dogfooding/tkn docker://sincoser/tektoncd-tkn:v1.0.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/operator:v0.68.1 docker://sincoser/tektoncd-operator-operator:v0.68.1
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/webhook:v0.68.1 docker://sincoser/tektoncd-operator-webhook:v0.68.1
+        
+
