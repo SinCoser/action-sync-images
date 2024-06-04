@@ -33,6 +33,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
+         skopeo copy --all docker://gcr.io/tekton-releases/dogfooding/tkn@sha256:d17fec04f655551464a47dd59553c9b44cf660cc72dbcdbd52c0b8e8668c0579 docker://sincoser/tkn:v1.0.0
         skopeo copy --all docker://gcr.io/kaniko-project/executor:latest docker://sincoser/kaniko:v1.0.0
         skopeo copy --all docker://quay.io/skopeo/stable:latest docker://sincoser/skopeo:v1.0.0
         skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/dashboard/cmd/dashboard:v0.39.0 docker://sincoser/tektoncd-dashboard-dashboard:v0.39.0
