@@ -33,6 +33,8 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
+        skopeo copy --all docker://gcr.io/knative-releases/knative.dev/operator/cmd/operator@sha256:22e2b89e04dc277867ec1d2fa08d5a4083e5e2a17cd656d42a3177f68dee1e2e docker://sincoser/knative-operator-cmd-operator:v1.0.0
+        skopeo copy --all docker://gcr.io/knative-releases/knative.dev/operator/cmd/webhook@sha256:9ac0eb439080e6758ac3647e44241ad3ac01c65a23e8a31d3da8c7ca7b37749d docker://sincoser/knative-operator-cmd-webhook:v1.0.0
         skopeo copy --all docker://gcr.io/tekton-releases/dogfooding/tkn:latest docker://sincoser/tkn:v1.0.0
         skopeo copy --all docker://gcr.io/kaniko-project/executor:latest docker://sincoser/kaniko:v1.0.0
         skopeo copy --all docker://quay.io/skopeo/stable:latest docker://sincoser/skopeo:v1.0.0
